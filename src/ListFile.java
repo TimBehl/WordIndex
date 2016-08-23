@@ -71,6 +71,7 @@ public class ListFile {
 
     public void putEntry(long offset, Entry entry){
     	try {
+    		if(offset == -1)offset = 0;
 			listFile.seek(offset);
 			listFile.writeLong(entry.getString().length());
 			listFile.writeChars(entry.getString());

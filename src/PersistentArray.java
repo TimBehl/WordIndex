@@ -51,7 +51,7 @@ public class PersistentArray {
 	
 	public long getLength(){
 		try {
-			return file.length();
+			return file.length()/BIT_OFFSET;
 		} catch (IOException e) {
 			e.printStackTrace();
 		}

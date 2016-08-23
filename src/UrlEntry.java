@@ -1,26 +1,26 @@
 public class UrlEntry {
 
-          private String url;
+	private String url;
 
-          private long count;
+	private long count;
 
-          public UrlEntry(String url, long count) {
+	public UrlEntry(String url, long count) {
 
-               this.url = url;
+		this.url = url;
 
-               this.count = count;
+		this.count = count;
 
-          }
+	}
 
-          public String getUrl() {
+	public String getUrl() {
 
-               return url;
+		return url;
 
-          }
+	}
 
-          public long getCount() {
+	public long getCount() {
 
-               return count;
+		return count;
 
-          }
+	}
 }
